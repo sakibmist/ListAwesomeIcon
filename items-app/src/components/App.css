@@ -1,0 +1,5 @@
+@import '../bootstrap.min.css';
+.minHeight{
+  min-height: 400px;
+  height: auto; 
+}

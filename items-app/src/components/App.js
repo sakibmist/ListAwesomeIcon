@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import {NavLink,Route} from 'react-router-dom';
 import './App.css';
 import addItemPage from './AddItemPage';
+import allItemsPage from './AllItemsPage';
 
 class App extends Component {
   render() {
@@ -60,13 +61,14 @@ class App extends Component {
                     </div>
                   </li>
                   <li className="nav-item navSpace">
-                  <NavLink to="/peoples" className="nav-link">Show-All</NavLink>
+                  <NavLink to="/allItemsPage" className="nav-link">Show-All</NavLink>
                   </li>
                 </ul>
               </div>
             </nav>
             <div className="minHeight">
             <Route path="/addItemPage" component={addItemPage} />
+            <Route path="/allItemsPage" component={allItemsPage} /> 
             {/* <Route path="/peoples" component={PersonIndexPage} />   
             <Route path="/person/edit/:id" component={EditPersonPage} />  
             <Route path="/person/detail/:id" component={DetailsPage}/> */}
